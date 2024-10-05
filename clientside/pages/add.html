@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details Form</title>
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Movie Details</h1>
+        <form id="frm" method="POST" enctype="multipart/form-data">
+            <label for="title">Movie Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <label for="release-date">Release Date:</label>
+            <input type="date" id="releaseDate" name="releaseDate" required>
+
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" required>
+
+            <label for="certification">Certification:</label>
+            <select id="certification" name="certification" required>
+                <option value="U">U</option>
+                <option value="UA">UA</option>
+                <option value="A">A</option>
+                <option value="S">S</option>
+            </select>
+
+            <div class="poc">
+                <div class="pic1">
+                <label for="picture">Title image:</label>
+            <input type="file" id="titleimg" name="picture1" accept="image/*" required>
+        </div>
+        <div class="pic2">
+            <label for="picture1">Banner image:</label>
+            <input type="file" id="banimg" name="picture2" accept="image/*" required>
+            </div>
+        </div>
+            <div class="btndiv">
+            <button type="submit">Submit</button></div>
+        </form>
+    </div>
+    <script src="../js/add.js"></script>
+</body>
+</html>
